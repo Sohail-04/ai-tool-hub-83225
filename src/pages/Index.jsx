@@ -1,7 +1,52 @@
 import React from 'react';
-import { Search, Wrench, Star, TrendingUp } from 'lucide-react';
+import { Search, Wrench, Star, TrendingUp, Brain, Palette, Code, MessageSquare, Image as ImageIcon, Music } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+
+const featuredTools = [
+  {
+    id: 1,
+    name: "ChatGPT",
+    description: "Advanced conversational AI for natural language understanding and generation.",
+    icon: MessageSquare,
+    category: "Conversational AI"
+  },
+  {
+    id: 2,
+    name: "Midjourney",
+    description: "AI-powered image generation tool that creates stunning artwork from text prompts.",
+    icon: ImageIcon,
+    category: "Image Generation"
+  },
+  {
+    id: 3,
+    name: "GitHub Copilot",
+    description: "AI pair programmer that helps you write code faster with intelligent suggestions.",
+    icon: Code,
+    category: "Code Assistant"
+  },
+  {
+    id: 4,
+    name: "Jasper AI",
+    description: "AI content creation platform for marketing copy, blog posts, and creative writing.",
+    icon: Brain,
+    category: "Content Creation"
+  },
+  {
+    id: 5,
+    name: "DALL-E 3",
+    description: "Create realistic images and art from natural language descriptions.",
+    icon: Palette,
+    category: "Image Generation"
+  },
+  {
+    id: 6,
+    name: "Murf AI",
+    description: "Text-to-speech platform with realistic AI voices for voiceovers and narration.",
+    icon: Music,
+    category: "Voice Synthesis"
+  }
+];
 
 const Index = () => {
   return (
@@ -41,17 +86,23 @@ const Index = () => {
       <section className="py-16 bg-gray-900">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">Featured AI Tools</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((item) => (
-              <div key={item} className="bg-gray-800 rounded-lg p-6">
-                <Wrench className="text-green-400 mb-4" size={48} />
-                <h3 className="text-xl font-bold mb-2">AI Tool {item}</h3>
-                <p className="text-gray-400 mb-4">Brief description of the AI tool and its capabilities.</p>
-                <Button variant="outline" className="text-green-400 border-green-400 hover:bg-green-400 hover:text-white">
-                  Add to Toolbox
-                </Button>
-              </div>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {featuredTools.map((tool) => {
+              const IconComponent = tool.icon;
+              return (
+                <div key={tool.id} className="bg-gray-800 rounded-lg p-6 hover:bg-gray-750 transition-colors">
+                  <IconComponent className="text-green-400 mb-4" size={48} />
+                  <div className="mb-2">
+                    <span className="text-xs text-blue-400 font-semibold">{tool.category}</span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">{tool.name}</h3>
+                  <p className="text-gray-400 mb-4 min-h-[60px]">{tool.description}</p>
+                  <Button variant="outline" className="text-green-400 border-green-400 hover:bg-green-400 hover:text-white">
+                    Add to Toolbox
+                  </Button>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
