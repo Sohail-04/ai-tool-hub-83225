@@ -1,5 +1,6 @@
 import React from 'react';
 import { Search, Wrench, Star, TrendingUp, Brain, Palette, Code, MessageSquare, Image as ImageIcon, Music } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 
@@ -57,9 +58,17 @@ const Index = () => {
           <div className="text-2xl font-bold text-green-400">AI Tool Tester</div>
           <nav>
             <ul className="flex space-x-4">
-              {['Home', 'About', 'Tools', 'Reviews', 'Trends', 'Blog', 'Contact'].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-gray-300 hover:text-green-400">{item}</a>
+              {[
+                { name: 'Home', path: '/' },
+                { name: 'About', path: '/about' },
+                { name: 'Tools', path: '/tools' },
+                { name: 'Reviews', path: '/reviews' },
+                { name: 'Trends', path: '/trends' },
+                { name: 'Blog', path: '/blog' },
+                { name: 'Contact', path: '/contact' }
+              ].map((item) => (
+                <li key={item.name}>
+                  <Link to={item.path} className="text-gray-300 hover:text-green-400">{item.name}</Link>
                 </li>
               ))}
             </ul>
@@ -76,8 +85,8 @@ const Index = () => {
         <div className="container mx-auto text-center">
           <h1 className="text-5xl font-bold mb-4">Your Ultimate AI Tools Resource</h1>
           <p className="text-xl mb-8">Testing, Reviewing, and Trending AI Innovations</p>
-          <Button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full">
-            Explore Tools
+          <Button asChild className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full">
+            <Link to="/tools">Explore Tools</Link>
           </Button>
         </div>
       </section>

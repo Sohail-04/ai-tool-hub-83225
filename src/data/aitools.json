@@ -1,0 +1,767 @@
+{
+  "ai_tools": [
+    {
+      "name": "ChatGPT",
+      "description": "Conversational AI for natural language understanding and generation.",
+      "category": "Conversational AI",
+      "official_link": "https://chat.openai.com/",
+      "logo_url": "https://chat.openai.com/favicon.ico"
+    },
+    {
+      "name": "GPT-4o (OpenAI)",
+      "description": "Advanced large language model for chat, code, and multimodal tasks.",
+      "category": "Large Language Model",
+      "official_link": "https://openai.com/",
+      "logo_url": "https://openai.com/favicon.ico"
+    },
+    {
+      "name": "Google Bard",
+      "description": "Google's conversational AI assistant integrated with search and generative features.",
+      "category": "Conversational AI",
+      "official_link": "https://bard.google.com/",
+      "logo_url": "https://bard.google.com/favicon.ico"
+    },
+    {
+      "name": "Microsoft Copilot",
+      "description": "AI assistant integrated across Microsoft 365 for productivity tasks and coding.",
+      "category": "Productivity / Coding Assistant",
+      "official_link": "https://www.microsoft.com/en-us/copilot",
+      "logo_url": "https://www.microsoft.com/favicon.ico"
+    },
+    {
+      "name": "GitHub Copilot",
+      "description": "AI pair programmer that suggests code and completions inside editors.",
+      "category": "Coding Assistant",
+      "official_link": "https://github.com/features/copilot",
+      "logo_url": "https://github.githubassets.com/favicons/favicon.png"
+    },
+    {
+      "name": "Anthropic Claude",
+      "description": "Conversational AI and assistant models focused on safety and helpfulness.",
+      "category": "Conversational AI",
+      "official_link": "https://www.anthropic.com/",
+      "logo_url": "https://www.anthropic.com/favicon.ico"
+    },
+    {
+      "name": "Perplexity AI",
+      "description": "AI-powered search and answer engine with citations.",
+      "category": "Search / Knowledge",
+      "official_link": "https://www.perplexity.ai/",
+      "logo_url": "https://www.perplexity.ai/favicon.ico"
+    },
+    {
+      "name": "Hugging Face",
+      "description": "Platform for hosting, sharing, and running machine learning models and datasets.",
+      "category": "Models & APIs",
+      "official_link": "https://huggingface.co/",
+      "logo_url": "https://huggingface.co/favicon.ico"
+    },
+    {
+      "name": "OpenAI API",
+      "description": "APIs for language, image, audio, and multimodal models from OpenAI.",
+      "category": "APIs / Models",
+      "official_link": "https://platform.openai.com/",
+      "logo_url": "https://platform.openai.com/static/favicon.ico"
+    },
+    {
+      "name": "Claude Instant",
+      "description": "Lightweight, fast Claude models for conversational and reasoning tasks.",
+      "category": "Conversational AI",
+      "official_link": "https://www.anthropic.com/",
+      "logo_url": "https://www.anthropic.com/favicon.ico"
+    },
+    {
+      "name": "Midjourney",
+      "description": "Text-to-image generation service focused on artistic images and styles.",
+      "category": "Image Generation",
+      "official_link": "https://www.midjourney.com/",
+      "logo_url": "https://www.midjourney.com/favicon.ico"
+    },
+    {
+      "name": "DALL·E",
+      "description": "OpenAI's text-to-image model for generating images from prompts.",
+      "category": "Image Generation",
+      "official_link": "https://openai.com/dall-e-3/",
+      "logo_url": "https://openai.com/favicon.ico"
+    },
+    {
+      "name": "Stable Diffusion",
+      "description": "Open-source text-to-image model for creative and controllable image generation.",
+      "category": "Image Generation",
+      "official_link": "https://stability.ai/",
+      "logo_url": "https://stability.ai/favicon.ico"
+    },
+    {
+      "name": "Leonardo AI",
+      "description": "Image generation platform optimized for game assets and creative art.",
+      "category": "Image Generation",
+      "official_link": "https://www.leonardo.ai/",
+      "logo_url": "https://www.leonardo.ai/favicon.ico"
+    },
+    {
+      "name": "Runway",
+      "description": "Creative tools for video, image editing, and generative media workflows.",
+      "category": "Video & Media",
+      "official_link": "https://runwayml.com/",
+      "logo_url": "https://runwayml.com/favicon.ico"
+    },
+    {
+      "name": "Canva AI",
+      "description": "Design platform with integrated AI features for layouts, images, and copy.",
+      "category": "Design / Productivity",
+      "official_link": "https://www.canva.com/",
+      "logo_url": "https://www.canva.com/favicon.ico"
+    },
+    {
+      "name": "Jasper",
+      "description": "AI writing assistant for marketing content, blogs, and ads.",
+      "category": "Content Writing",
+      "official_link": "https://www.jasper.ai/",
+      "logo_url": "https://www.jasper.ai/favicon.ico"
+    },
+    {
+      "name": "Copy.ai",
+      "description": "AI tool for writing marketing copy, product descriptions, and social posts.",
+      "category": "Content Writing",
+      "official_link": "https://www.copy.ai/",
+      "logo_url": "https://www.copy.ai/favicon.ico"
+    },
+    {
+      "name": "Writesonic",
+      "description": "AI copywriting assistant for long-form articles, ads, and landing pages.",
+      "category": "Content Writing",
+      "official_link": "https://writesonic.com/",
+      "logo_url": "https://writesonic.com/favicon.ico"
+    },
+    {
+      "name": "Wordtune",
+      "description": "Writing assistant for rewriting, tone adjustments, and fluency improvements.",
+      "category": "Writing Assistant",
+      "official_link": "https://www.wordtune.com/",
+      "logo_url": "https://www.wordtune.com/favicon.ico"
+    },
+    {
+      "name": "QuillBot",
+      "description": "Paraphrasing, grammar checking, and summarization tool for writers.",
+      "category": "Writing Assistant",
+      "official_link": "https://quillbot.com/",
+      "logo_url": "https://quillbot.com/favicon.ico"
+    },
+    {
+      "name": "Notion AI",
+      "description": "AI features inside Notion for drafting, summarization, and knowledge work.",
+      "category": "Productivity",
+      "official_link": "https://www.notion.so/product/ai",
+      "logo_url": "https://www.notion.so/images/favicon.ico"
+    },
+    {
+      "name": "Tome",
+      "description": "AI-first presentation and storytelling tool to create decks from prompts.",
+      "category": "Presentation AI",
+      "official_link": "https://www.tome.app/",
+      "logo_url": "https://tome.app/favicon.ico"
+    },
+    {
+      "name": "Gamma",
+      "description": "Generate polished presentations and documents using AI workflows.",
+      "category": "Presentation AI",
+      "official_link": "https://gamma.app/",
+      "logo_url": "https://gamma.app/favicon.ico"
+    },
+    {
+      "name": "Beautiful.ai",
+      "description": "AI-driven presentation design with templates and layout suggestions.",
+      "category": "Presentation AI",
+      "official_link": "https://www.beautiful.ai/",
+      "logo_url": "https://www.beautiful.ai/favicon.ico"
+    },
+    {
+      "name": "Synthesia",
+      "description": "Create AI-generated videos with avatars, voiceovers, and scripting.",
+      "category": "Video AI",
+      "official_link": "https://www.synthesia.io/",
+      "logo_url": "https://www.synthesia.io/favicon.ico"
+    },
+    {
+      "name": "HeyGen",
+      "description": "AI video avatar platform for personalized video messages and content.",
+      "category": "Video Avatar",
+      "official_link": "https://heygen.com/",
+      "logo_url": "https://heygen.com/favicon.ico"
+    },
+    {
+      "name": "Rephrase.ai",
+      "description": "Personalized AI video generation for marketing and sales outreach.",
+      "category": "Video AI",
+      "official_link": "https://www.rephrase.ai/",
+      "logo_url": "https://www.rephrase.ai/favicon.ico"
+    },
+    {
+      "name": "Pictory",
+      "description": "Turn blog posts or scripts into short videos using AI tools.",
+      "category": "Video Creator",
+      "official_link": "https://pictory.ai/",
+      "logo_url": "https://pictory.ai/favicon.ico"
+    },
+    {
+      "name": "Opus Clip",
+      "description": "Automatically create short clips optimized for social media from long videos.",
+      "category": "Video Editing",
+      "official_link": "https://www.opusclip.com/",
+      "logo_url": "https://www.opusclip.com/favicon.ico"
+    },
+    {
+      "name": "Descript",
+      "description": "Audio/video editor with AI transcription, filler removal, and overdub voices.",
+      "category": "Audio & Video Editing",
+      "official_link": "https://www.descript.com/",
+      "logo_url": "https://www.descript.com/favicon.ico"
+    },
+    {
+      "name": "Otter.ai",
+      "description": "Real-time transcription and meeting notes using AI.",
+      "category": "Transcription / Meeting",
+      "official_link": "https://otter.ai/",
+      "logo_url": "https://otter.ai/favicon.ico"
+    },
+    {
+      "name": "Fireflies",
+      "description": "Meeting assistant that records, transcribes, and summarizes conversations.",
+      "category": "Meeting Assistant",
+      "official_link": "https://fireflies.ai/",
+      "logo_url": "https://fireflies.ai/favicon.ico"
+    },
+    {
+      "name": "Fathom",
+      "description": "AI-powered meeting recorder and highlight tool for Zoom calls.",
+      "category": "Meeting Assistant",
+      "official_link": "https://fathom.video/",
+      "logo_url": "https://fathom.video/favicon.ico"
+    },
+    {
+      "name": "Scribe",
+      "description": "Automatically document processes and turn steps into sharable guides.",
+      "category": "Process Documentation",
+      "official_link": "https://scribehow.com/",
+      "logo_url": "https://scribehow.com/favicon.ico"
+    },
+    {
+      "name": "Murf",
+      "description": "Text-to-speech and voiceover generation with realistic voices.",
+      "category": "Voice & Audio",
+      "official_link": "https://murf.ai/",
+      "logo_url": "https://murf.ai/favicon.ico"
+    },
+    {
+      "name": "ElevenLabs",
+      "description": "High-quality, realistic text-to-speech and voice cloning.",
+      "category": "Voice & Audio",
+      "official_link": "https://elevenlabs.io/",
+      "logo_url": "https://elevenlabs.io/favicon.ico"
+    },
+    {
+      "name": "Resemble AI",
+      "description": "Voice cloning and speech synthesis platform for personalized voices.",
+      "category": "Voice Cloning",
+      "official_link": "https://www.resemble.ai/",
+      "logo_url": "https://www.resemble.ai/favicon.ico"
+    },
+    {
+      "name": "Lumen5",
+      "description": "Create short videos from text and blog posts with AI assistance.",
+      "category": "Video Creator",
+      "official_link": "https://lumen5.com/",
+      "logo_url": "https://lumen5.com/favicon.ico"
+    },
+    {
+      "name": "Podcastle",
+      "description": "End-to-end podcast creation platform with AI features.",
+      "category": "Podcasting",
+      "official_link": "https://podcastle.ai/",
+      "logo_url": "https://podcastle.ai/favicon.ico"
+    },
+    {
+      "name": "AIVA",
+      "description": "AI composer that writes music for films, games, and ads.",
+      "category": "Music / Audio",
+      "official_link": "https://www.aiva.ai/",
+      "logo_url": "https://www.aiva.ai/favicon.ico"
+    },
+    {
+      "name": "Mubert",
+      "description": "Generative music engine for streaming and content creation.",
+      "category": "Music / Audio",
+      "official_link": "https://mubert.com/",
+      "logo_url": "https://mubert.com/favicon.ico"
+    },
+    {
+      "name": "Beatoven",
+      "description": "AI music composer focusing on mood-based soundtracks.",
+      "category": "Music / Audio",
+      "official_link": "https://beatoven.ai/",
+      "logo_url": "https://beatoven.ai/favicon.ico"
+    },
+    {
+      "name": "Suno",
+      "description": "AI for generating original songs and vocal tracks.",
+      "category": "Music / Audio",
+      "official_link": "https://suno.ai/",
+      "logo_url": "https://suno.ai/favicon.ico"
+    },
+    {
+      "name": "Civitai",
+      "description": "Community hub for sharing and discovering models, prompts, and assets.",
+      "category": "Model Sharing",
+      "official_link": "https://civitai.com/",
+      "logo_url": "https://civitai.com/favicon.ico"
+    },
+    {
+      "name": "PromptBase",
+      "description": "Marketplace for buying and selling high-quality prompts for generative models.",
+      "category": "Prompt Marketplace",
+      "official_link": "https://promptbase.com/",
+      "logo_url": "https://promptbase.com/favicon.ico"
+    },
+    {
+      "name": "PromptPerfect",
+      "description": "Tool to optimize prompts for better outputs from generative models.",
+      "category": "Prompt Engineering",
+      "official_link": "https://www.promptperfect.com/",
+      "logo_url": "https://www.promptperfect.com/favicon.ico"
+    },
+    {
+      "name": "PromptLayer",
+      "description": "Prompt management and analytics platform for LLM workflows.",
+      "category": "Prompt Management",
+      "official_link": "https://promptlayer.com/",
+      "logo_url": "https://promptlayer.com/favicon.ico"
+    },
+    {
+      "name": "HuggingFace Spaces",
+      "description": "Host demos and apps built with ML models on Hugging Face.",
+      "category": "Deployment / Demos",
+      "official_link": "https://huggingface.co/spaces",
+      "logo_url": "https://huggingface.co/favicon.ico"
+    },
+    {
+      "name": "Adept",
+      "description": "Build AI agents to automate software and web workflows.",
+      "category": "Automation / Agents",
+      "official_link": "https://www.adept.ai/",
+      "logo_url": "https://www.adept.ai/favicon.ico"
+    },
+    {
+      "name": "Harpa AI",
+      "description": "Browser copilot for scraping, automation, and in-browser AI actions.",
+      "category": "Browser Automation",
+      "official_link": "https://harpa.ai/",
+      "logo_url": "https://harpa.ai/favicon.ico"
+    },
+    {
+      "name": "Zapier (AI integrations)",
+      "description": "Automation platform with AI-enabled integrations and actions.",
+      "category": "Automation",
+      "official_link": "https://zapier.com/",
+      "logo_url": "https://zapier.com/favicon.ico"
+    },
+    {
+      "name": "Make (Integromat)",
+      "description": "Visual workflow automation platform with AI modules and integrations.",
+      "category": "Automation",
+      "official_link": "https://www.make.com/",
+      "logo_url": "https://www.make.com/favicon.ico"
+    },
+    {
+      "name": "Runpod",
+      "description": "Cloud GPUs and infrastructure for running ML models and containers.",
+      "category": "Infrastructure",
+      "official_link": "https://www.runpod.io/",
+      "logo_url": "https://www.runpod.io/favicon.ico"
+    },
+    {
+      "name": "Paperspace",
+      "description": "Cloud compute and GPUs for ML training and inference.",
+      "category": "Infrastructure",
+      "official_link": "https://www.paperspace.com/",
+      "logo_url": "https://www.paperspace.com/favicon.ico"
+    },
+    {
+      "name": "Lambda Labs",
+      "description": "GPU cloud and workstations for deep learning and model training.",
+      "category": "Infrastructure",
+      "official_link": "https://lambdalabs.com/",
+      "logo_url": "https://lambdalabs.com/favicon.ico"
+    },
+    {
+      "name": "Replicate",
+      "description": "Run machine learning models in the cloud via a simple API.",
+      "category": "Models & APIs",
+      "official_link": "https://replicate.com/",
+      "logo_url": "https://replicate.com/favicon.ico"
+    },
+    {
+      "name": "AssemblyAI",
+      "description": "Speech-to-text, speech recognition, and audio intelligence APIs.",
+      "category": "Speech / Audio APIs",
+      "official_link": "https://www.assemblyai.com/",
+      "logo_url": "https://www.assemblyai.com/favicon.ico"
+    },
+    {
+      "name": "DeepL",
+      "description": "High-quality neural machine translation and writing tools.",
+      "category": "Translation",
+      "official_link": "https://www.deepl.com/",
+      "logo_url": "https://www.deepl.com/favicon.ico"
+    },
+    {
+      "name": "Lilt",
+      "description": "AI-assisted translation platform for enterprises and localization.",
+      "category": "Translation",
+      "official_link": "https://lilt.com/",
+      "logo_url": "https://lilt.com/favicon.ico"
+    },
+    {
+      "name": "Grammarly",
+      "description": "Writing assistant that checks grammar, clarity, and tone using AI.",
+      "category": "Writing Assistant",
+      "official_link": "https://www.grammarly.com/",
+      "logo_url": "https://www.grammarly.com/favicon.ico"
+    },
+    {
+      "name": "Lensa AI",
+      "description": "AI-powered photo editing and stylized portrait generation.",
+      "category": "Image Editing",
+      "official_link": "https://lensa-ai.com/",
+      "logo_url": "https://lensa-ai.com/favicon.ico"
+    },
+    {
+      "name": "Remini",
+      "description": "AI image enhancement and restoration app for photos and videos.",
+      "category": "Image Enhancement",
+      "official_link": "https://www.remini.ai/",
+      "logo_url": "https://www.remini.ai/favicon.ico"
+    },
+    {
+      "name": "PhotoRoom",
+      "description": "AI background removal and product-photo editor.",
+      "category": "Image Editing",
+      "official_link": "https://www.photoroom.com/",
+      "logo_url": "https://www.photoroom.com/favicon.ico"
+    },
+    {
+      "name": "InVideo",
+      "description": "Online video editor with AI templates and text-to-video features.",
+      "category": "Video Editing",
+      "official_link": "https://invideo.io/",
+      "logo_url": "https://invideo.io/favicon.ico"
+    },
+    {
+      "name": "Fliki",
+      "description": "Convert text to video with AI voices and stock media.",
+      "category": "Text-to-Video",
+      "official_link": "https://fliki.ai/",
+      "logo_url": "https://fliki.ai/favicon.ico"
+    },
+    {
+      "name": "Mixo",
+      "description": "AI tool to quickly generate landing pages and startup ideas.",
+      "category": "Startup Tools",
+      "official_link": "https://mixo.io/",
+      "logo_url": "https://mixo.io/favicon.ico"
+    },
+    {
+      "name": "Durable",
+      "description": "AI-powered website builder that generates sites in minutes.",
+      "category": "Website Builder",
+      "official_link": "https://durable.co/",
+      "logo_url": "https://durable.co/favicon.ico"
+    },
+    {
+      "name": "Framer AI",
+      "description": "Design tool with AI features for layouts, content, and prototypes.",
+      "category": "Design / Prototyping",
+      "official_link": "https://www.framer.com/",
+      "logo_url": "https://www.framer.com/favicon.ico"
+    },
+    {
+      "name": "Uizard",
+      "description": "Turn sketches and screenshots into UI prototypes using AI.",
+      "category": "Design / Prototyping",
+      "official_link": "https://uizard.io/",
+      "logo_url": "https://uizard.io/favicon.ico"
+    },
+    {
+      "name": "Luma AI",
+      "description": "Create high-quality 3D captures and NeRF-based scenes from images.",
+      "category": "3D / NeRF",
+      "official_link": "https://lumalabs.ai/",
+      "logo_url": "https://lumalabs.ai/favicon.ico"
+    },
+    {
+      "name": "Point-E",
+      "description": "Tools and models for generating 3D assets from text or images.",
+      "category": "3D Generation",
+      "official_link": "https://github.com/openai/point-e",
+      "logo_url": "https://github.githubassets.com/favicons/favicon.png"
+    },
+    {
+      "name": "Runway Gen-2",
+      "description": "Video generation model and creative suite by Runway.",
+      "category": "Video Generation",
+      "official_link": "https://runwayml.com/",
+      "logo_url": "https://runwayml.com/favicon.ico"
+    },
+    {
+      "name": "Character.ai",
+      "description": "Create and chat with custom AI characters and personalities.",
+      "category": "Conversational AI",
+      "official_link": "https://beta.character.ai/",
+      "logo_url": "https://character.ai/favicon.ico"
+    },
+    {
+      "name": "Replit Ghostwriter",
+      "description": "AI assistant for coding, explaining, and generating code on Replit.",
+      "category": "Coding Assistant",
+      "official_link": "https://replit.com/site/ghostwriter",
+      "logo_url": "https://replit.com/favicon.ico"
+    },
+    {
+      "name": "Tabnine",
+      "description": "AI code completion and assistant supporting multiple IDEs.",
+      "category": "Coding Assistant",
+      "official_link": "https://www.tabnine.com/",
+      "logo_url": "https://www.tabnine.com/favicon.ico"
+    },
+    {
+      "name": "Kite",
+      "description": "AI-powered code completions and documentation in editors.",
+      "category": "Coding Assistant",
+      "official_link": "https://www.kite.com/",
+      "logo_url": "https://www.kite.com/favicon.ico"
+    },
+    {
+      "name": "CodiumAI",
+      "description": "Automated tests and code fixes using AI insights.",
+      "category": "Developer Tools",
+      "official_link": "https://codium.ai/",
+      "logo_url": "https://codium.ai/favicon.ico"
+    },
+    {
+      "name": "Snyk AI",
+      "description": "Developer security platform with AI-assisted vulnerability detection.",
+      "category": "Security / DevTools",
+      "official_link": "https://snyk.io/",
+      "logo_url": "https://snyk.io/favicon.ico"
+    },
+    {
+      "name": "Explainpaper",
+      "description": "Simplify and explain academic papers using AI.",
+      "category": "Research / Summarization",
+      "official_link": "https://explainpaper.com/",
+      "logo_url": "https://explainpaper.com/favicon.ico"
+    },
+    {
+      "name": "Elicit",
+      "description": "Research assistant to find, summarize, and organize academic literature.",
+      "category": "Research / Literature",
+      "official_link": "https://elicit.org/",
+      "logo_url": "https://elicit.org/favicon.ico"
+    },
+    {
+      "name": "Atlas (by Stability)",
+      "description": "Tooling and hosting around Stability models and assets.",
+      "category": "Model Hosting",
+      "official_link": "https://stability.ai/",
+      "logo_url": "https://stability.ai/favicon.ico"
+    },
+    {
+      "name": "Snyk",
+      "description": "Developer security platform with automation and scanning (AI-enhanced).",
+      "category": "Security",
+      "official_link": "https://snyk.io/",
+      "logo_url": "https://snyk.io/favicon.ico"
+    },
+    {
+      "name": "Notable (AI note tool)",
+      "description": "Clip, summarize, and annotate content using AI for research and notes.",
+      "category": "Productivity / Notes",
+      "official_link": "https://www.notable.so/",
+      "logo_url": "https://www.notable.so/favicon.ico"
+    },
+    {
+      "name": "Socratic by Google",
+      "description": "Homework helper that uses AI to explain concepts and solve problems.",
+      "category": "Education",
+      "official_link": "https://socratic.org/",
+      "logo_url": "https://socratic.org/favicon.ico"
+    },
+    {
+      "name": "Khanmigo (Khan Academy)",
+      "description": "AI tutor integrated into Khan Academy for guided learning.",
+      "category": "Education",
+      "official_link": "https://khanacademy.org/",
+      "logo_url": "https://khanacademy.org/favicon.ico"
+    },
+    {
+      "name": "Legal Robot",
+      "description": "AI tools for contract analysis, readability, and risk detection.",
+      "category": "Legal / Compliance",
+      "official_link": "https://www.legalrobot.com/",
+      "logo_url": "https://www.legalrobot.com/favicon.ico"
+    },
+    {
+      "name": "Casetext CoCounsel",
+      "description": "AI legal assistant for research, drafting, and contract review.",
+      "category": "Legal / Research",
+      "official_link": "https://casetext.com/",
+      "logo_url": "https://casetext.com/favicon.ico"
+    },
+    {
+      "name": "Sana",
+      "description": "AI knowledge assistant for product and engineering teams (internal docs).",
+      "category": "Knowledge / Internal Search",
+      "official_link": "https://sana.com/",
+      "logo_url": "https://sana.com/favicon.ico"
+    },
+    {
+      "name": "Gong.io",
+      "description": "Conversation intelligence for sales with AI-driven insights and coaching.",
+      "category": "Sales / Conversation Intelligence",
+      "official_link": "https://www.gong.io/",
+      "logo_url": "https://www.gong.io/favicon.ico"
+    },
+    {
+      "name": "Chorus.ai",
+      "description": "Calls and meetings intelligence platform to analyze sales conversations.",
+      "category": "Sales / Conversation Intelligence",
+      "official_link": "https://chorus.ai/",
+      "logo_url": "https://chorus.ai/favicon.ico"
+    },
+    {
+      "name": "Crystal Knows",
+      "description": "Personality insights and communication suggestions for outreach.",
+      "category": "Sales / Communication",
+      "official_link": "https://www.crystalknows.com/",
+      "logo_url": "https://www.crystalknows.com/favicon.ico"
+    },
+    {
+      "name": "Tavus",
+      "description": "Personalized video generation for sales outreach and follow-ups.",
+      "category": "Video Personalization",
+      "official_link": "https://tavus.io/",
+      "logo_url": "https://tavus.io/favicon.ico"
+    },
+    {
+      "name": "Humanloop",
+      "description": "Tools for fine-tuning and deploying LLMs with human feedback loops.",
+      "category": "ML Ops / Human-in-the-loop",
+      "official_link": "https://humanloop.ai/",
+      "logo_url": "https://humanloop.ai/favicon.ico"
+    },
+    {
+      "name": "Weights & Biases",
+      "description": "Experiment tracking, model monitoring, and dataset management for ML teams.",
+      "category": "ML Ops",
+      "official_link": "https://wandb.ai/",
+      "logo_url": "https://wandb.com/favicon.ico"
+    },
+    {
+      "name": "Epsagon (by Cisco)",
+      "description": "Observability and tracing tools with AI-driven anomaly detection.",
+      "category": "Observability",
+      "official_link": "https://www.cisco.com/",
+      "logo_url": "https://www.cisco.com/favicon.ico"
+    },
+    {
+      "name": "Runway Text-to-3D",
+      "description": "Experimental tools to generate 3D assets from text prompts.",
+      "category": "3D Generation",
+      "official_link": "https://runwayml.com/",
+      "logo_url": "https://runwayml.com/favicon.ico"
+    },
+    {
+      "name": "Socratic (by Google)",
+      "description": "Educational AI assistant to help students understand problems and concepts.",
+      "category": "Education",
+      "official_link": "https://socratic.org/",
+      "logo_url": "https://socratic.org/favicon.ico"
+    },
+    {
+      "name": "Bing Chat",
+      "description": "Microsoft Bing integrated conversational experience powered by OpenAI models.",
+      "category": "Conversational AI",
+      "official_link": "https://www.bing.com/new",
+      "logo_url": "https://www.bing.com/favicon.ico"
+    },
+    {
+      "name": "Krisp",
+      "description": "AI noise cancellation for calls and recordings.",
+      "category": "Audio / Communication",
+      "official_link": "https://krisp.ai/",
+      "logo_url": "https://krisp.ai/favicon.ico"
+    },
+    {
+      "name": "Snorkel AI",
+      "description": "Programmatic data labeling and weak supervision for training ML models.",
+      "category": "Data Labeling",
+      "official_link": "https://snorkel.ai/",
+      "logo_url": "https://snorkel.ai/favicon.ico"
+    },
+    {
+      "name": "Labelbox",
+      "description": "Data labeling platform for images, video, text, and more with AI-assisted tools.",
+      "category": "Data Labeling",
+      "official_link": "https://labelbox.com/",
+      "logo_url": "https://labelbox.com/favicon.ico"
+    },
+    {
+      "name": "Scale AI",
+      "description": "Data annotation and labeling services for training machine learning systems.",
+      "category": "Data Labeling",
+      "official_link": "https://scale.com/",
+      "logo_url": "https://scale.com/favicon.ico"
+    },
+    {
+      "name": "AssemblyAI",
+      "description": "Speech-to-text and audio intelligence APIs for transcription and analysis.",
+      "category": "Speech / Audio APIs",
+      "official_link": "https://www.assemblyai.com/",
+      "logo_url": "https://www.assemblyai.com/favicon.ico"
+    },
+    {
+      "name": "Speechly",
+      "description": "Real-time speech recognition and voice interface solutions.",
+      "category": "Speech / Voice",
+      "official_link": "https://www.speechly.com/",
+      "logo_url": "https://www.speechly.com/favicon.ico"
+    },
+    {
+      "name": "Deepgram",
+      "description": "AI speech recognition APIs optimized for scale and accuracy.",
+      "category": "Speech / Audio APIs",
+      "official_link": "https://deepgram.com/",
+      "logo_url": "https://deepgram.com/favicon.ico"
+    },
+    {
+      "name": "Reclaim.ai",
+      "description": "AI time management and scheduling assistant integrated with calendars.",
+      "category": "Productivity / Scheduling",
+      "official_link": "https://reclaim.ai/",
+      "logo_url": "https://reclaim.ai/favicon.ico"
+    },
+    {
+      "name": "Calendly (with AI features)",
+      "description": "Smart scheduling with automations and integrations; AI features for invites.",
+      "category": "Scheduling",
+      "official_link": "https://calendly.com/",
+      "logo_url": "https://calendly.com/favicon.ico"
+    },
+    {
+      "name": "HelloSign (Dropbox Sign)",
+      "description": "E-signature platform with intelligent templates and workflows.",
+      "category": "Legal / Productivity",
+      "official_link": "https://www.dropsign.com/",
+      "logo_url": "https://www.dropsign.com/favicon.ico"
+    }
+  ]
+}
