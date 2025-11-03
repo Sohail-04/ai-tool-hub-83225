@@ -1,6 +1,7 @@
 import { Home, Info, Wrench, Star, TrendingUp, BookOpen, Mail } from "lucide-react";
 import Index from "./pages/Index.jsx";
 import Tools from "./pages/Tools.jsx";
+import About from "./pages/About.jsx";
 
 /**
  * Central place for defining the navigation items. Used for navigation components and routing.
@@ -16,7 +17,7 @@ export const navItems = [
     title: "About",
     to: "/about",
     icon: <Info className="h-4 w-4" />,
-    page: <div>About Page</div>,
+    page: <About />,
   },
   {
     title: "Tools",
