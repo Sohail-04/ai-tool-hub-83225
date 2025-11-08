@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label";
 import MobileNav from "@/components/MobileNav";
 import { navItems } from "@/nav-items";
 import { useState } from "react";
-import { useToast } from "@/hooks/use-toast";
+import { useToast } from "@/components/ui/use-toast";
 
 const Contact = () => {
   const { toast } = useToast();
