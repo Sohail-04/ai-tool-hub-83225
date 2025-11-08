@@ -25,5 +25,6 @@ export default defineConfig(({ mode }) => ({
         replacement: resolve(__dirname, "lib"),
       },
     ],
+    dedupe: ["react", "react-dom"],
   },
 }));
