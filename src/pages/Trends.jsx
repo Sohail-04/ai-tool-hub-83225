@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import MobileNav from "@/components/MobileNav";
 import { navItems } from "@/nav-items";
+import { Link } from "react-router-dom";
 
 const trends = [
   {
@@ -106,9 +107,9 @@ const Trends = () => {
             <ul className="flex gap-6">
               {navItems.map((item) => (
                 <li key={item.to}>
-                  <a href={item.to} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+                  <Link to={item.to} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
                     {item.title}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

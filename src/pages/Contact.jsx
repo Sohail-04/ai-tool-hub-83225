@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import MobileNav from "@/components/MobileNav";
 import { navItems } from "@/nav-items";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
 
@@ -48,9 +49,9 @@ const Contact = () => {
             <ul className="flex gap-6">
               {navItems.map((item) => (
                 <li key={item.to}>
-                  <a href={item.to} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+                  <Link to={item.to} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
                     {item.title}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

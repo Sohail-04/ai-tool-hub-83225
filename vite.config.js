@@ -24,7 +24,18 @@ export default defineConfig(({ mode }) => ({
         find: "lib",
         replacement: resolve(__dirname, "lib"),
       },
+      {
+        find: "react",
+        replacement: resolve(__dirname, "node_modules/react"),
+      },
+      {
+        find: "react-dom",
+        replacement: resolve(__dirname, "node_modules/react-dom"),
+      },
     ],
     dedupe: ["react", "react-dom"],
+  },
+  optimizeDeps: {
+    include: ["react", "react-dom"],
   },
 }));
