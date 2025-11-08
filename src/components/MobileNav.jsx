@@ -21,13 +21,13 @@ const MobileNav = ({ navItems }) => {
         <nav className="mt-8">
           <ul className="space-y-4">
             {navItems.map((item) => (
-              <li key={item.name}>
+              <li key={item.to}>
                 <SheetClose asChild>
                   <Link
-                    to={item.path}
+                    to={item.to}
                     className="block text-lg text-gray-300 hover:text-green-400 transition-colors py-2 px-3 rounded-md hover:bg-gray-800"
                   >
-                    {item.name}
+                    {item.title}
                   </Link>
                 </SheetClose>
               </li>
