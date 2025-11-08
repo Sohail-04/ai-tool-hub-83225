@@ -1,7 +1,8 @@
-import { Home, Info, Wrench, Star, TrendingUp, BookOpen, Mail } from "lucide-react";
+import { Home, Info, Wrench, Star, TrendingUp, BookOpen, Mail, Package } from "lucide-react";
 import Index from "./pages/Index.jsx";
 import Tools from "./pages/Tools.jsx";
 import About from "./pages/About.jsx";
+import Toolbox from "./pages/Toolbox.jsx";
 
 /**
  * Central place for defining the navigation items. Used for navigation components and routing.
@@ -24,6 +25,12 @@ export const navItems = [
     to: "/tools",
     icon: <Wrench className="h-4 w-4" />,
     page: <Tools />,
+  },
+  {
+    title: "Toolbox",
+    to: "/toolbox",
+    icon: <Package className="h-4 w-4" />,
+    page: <Toolbox />,
   },
   {
     title: "Reviews",
