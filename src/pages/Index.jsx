@@ -25,6 +25,7 @@ const Index = () => {
                 { name: 'Home', path: '/' },
                 { name: 'About', path: '/about' },
                 { name: 'Tools', path: '/tools' },
+                { name: 'Toolbox', path: '/toolbox' },
                 { name: 'Reviews', path: '/reviews' },
                 { name: 'Trends', path: '/trends' },
                 { name: 'Blog', path: '/blog' },
