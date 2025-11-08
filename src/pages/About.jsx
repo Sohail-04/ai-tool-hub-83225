@@ -4,8 +4,16 @@ import { Sparkles, Target, Users, Shield, Zap, TrendingUp, GitBranch, MessageSqu
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import MobileNav from '@/components/MobileNav';
 
 const About = () => {
+  const navItems = [
+    { name: 'Home', path: '/' },
+    { name: 'Tools', path: '/tools' },
+    { name: 'About', path: '/about' },
+    { name: 'Contact', path: '/contact' }
+  ];
+
   const values = [
     {
       icon: Shield,
@@ -76,19 +84,17 @@ const About = () => {
     <div className="min-h-screen bg-black text-white">
       {/* Header */}
       <header className="bg-gray-900 border-b border-gray-800">
-        <div className="container mx-auto px-4 py-4">
+        <div className="container mx-auto px-4 md:px-6 py-4">
           <div className="flex items-center justify-between">
-            <Link to="/" className="text-2xl font-bold text-green-400 hover:text-green-300 transition-colors">
-              AI Tool Hub
-            </Link>
-            <nav>
+            <div className="flex items-center gap-4">
+              <MobileNav navItems={navItems} />
+              <Link to="/" className="text-xl md:text-2xl font-bold text-green-400 hover:text-green-300 transition-colors">
+                AI Tool Hub
+              </Link>
+            </div>
+            <nav className="hidden lg:block">
               <ul className="flex space-x-6">
-                {[
-                  { name: 'Home', path: '/' },
-                  { name: 'Tools', path: '/tools' },
-                  { name: 'About', path: '/about' },
-                  { name: 'Contact', path: '/contact' }
-                ].map((item) => (
+                {navItems.map((item) => (
                   <li key={item.name}>
                     <Link 
                       to={item.path} 
@@ -107,13 +113,13 @@ const About = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-900 via-green-900/20 to-blue-900/20">
+      <section className="py-12 md:py-16 lg:py-20 bg-gradient-to-br from-gray-900 via-green-900/20 to-blue-900/20">
         <div className="container mx-auto px-4 text-center">
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-green-500/20 mb-6">
-            <Sparkles className="text-green-400" size={40} />
+          <div className="inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full bg-green-500/20 mb-6">
+            <Sparkles className="text-green-400" size={32} />
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">About AI Tool Hub</h1>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">About AI Tool Hub</h1>
+          <p className="text-base md:text-xl text-gray-400 max-w-3xl mx-auto">
             Simplifying AI tool discovery in a rapidly evolving digital landscape
           </p>
         </div>
@@ -144,10 +150,10 @@ const About = () => {
 
       {/* What We Solve Section */}
       <section className="py-16 bg-black">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 md:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl font-bold mb-12 text-center">What We Do</h2>
-            <div className="grid md:grid-cols-3 gap-8">
+            <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center">What We Do</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
               <Card className="bg-gray-800 border-gray-700 hover:border-green-400/50 transition-all">
                 <CardHeader>
                   <div className="w-12 h-12 rounded-lg bg-green-500/20 flex items-center justify-center mb-4">
@@ -196,24 +202,24 @@ const About = () => {
 
       {/* Values Section */}
       <section className="py-16 bg-gray-900">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 md:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl font-bold mb-12 text-center">Our Values</h2>
-            <div className="grid md:grid-cols-2 gap-6">
+            <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center">Our Values</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
               {values.map((value, index) => {
                 const IconComponent = value.icon;
                 return (
                   <Card key={index} className="bg-gray-800 border-gray-700 hover:scale-105 transition-transform">
                     <CardHeader>
                       <div className="flex items-center gap-4">
-                        <div className="w-12 h-12 rounded-lg bg-green-500/20 flex items-center justify-center flex-shrink-0">
-                          <IconComponent className="text-green-400" size={24} />
+                        <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-green-500/20 flex items-center justify-center flex-shrink-0">
+                          <IconComponent className="text-green-400" size={20} />
                         </div>
-                        <CardTitle className="text-white">{value.title}</CardTitle>
+                        <CardTitle className="text-base md:text-lg text-white">{value.title}</CardTitle>
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-gray-400">{value.description}</p>
+                      <p className="text-sm md:text-base text-gray-400">{value.description}</p>
                     </CardContent>
                   </Card>
                 );
@@ -225,17 +231,17 @@ const About = () => {
 
       {/* Roadmap Section */}
       <section className="py-16 bg-black">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 md:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
             <div className="flex items-center justify-center gap-3 mb-12">
-              <GitBranch className="text-green-400" size={32} />
-              <h2 className="text-3xl font-bold">Future Roadmap</h2>
+              <GitBranch className="text-green-400" size={24} />
+              <h2 className="text-2xl md:text-3xl font-bold">Future Roadmap</h2>
             </div>
             <div className="space-y-4">
               {roadmap.map((item, index) => (
                 <div 
                   key={index} 
-                  className="bg-gray-800 border border-gray-700 rounded-lg p-6 hover:border-green-400/50 transition-all"
+                  className="bg-gray-800 border border-gray-700 rounded-lg p-4 md:p-6 hover:border-green-400/50 transition-all"
                 >
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 pt-1">

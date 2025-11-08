@@ -12,7 +12,7 @@ const CategoryFilter = ({ categories, selectedCategory, onSelectCategory, toolCo
         <h3 className="text-lg font-bold text-white">Categories</h3>
       </div>
       
-      <ScrollArea className="h-[500px] pr-4">
+      <ScrollArea className="h-[300px] md:h-[400px] lg:h-[500px] pr-4">
         <div className="space-y-2">
           <Button
             variant={selectedCategory === 'All' ? 'default' : 'ghost'}

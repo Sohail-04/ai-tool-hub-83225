@@ -72,5 +72,18 @@
   }
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Touch-friendly buttons on mobile */
+  @media (max-width: 768px) {
+    button:not(.no-touch-target), 
+    a[role="button"]:not(.no-touch-target) {
+      min-height: 44px;
+      min-width: 44px;
+    }
   }
 }

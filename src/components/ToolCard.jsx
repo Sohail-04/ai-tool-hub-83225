@@ -26,8 +26,8 @@ const ToolCard = ({ tool }) => {
   return (
     <Card className="bg-gray-800 border-gray-700 hover:bg-gray-750 hover:border-green-400/50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-green-400/20 flex flex-col h-full">
       <CardHeader>
-        <div className="flex items-start gap-4">
-          <div className="w-12 h-12 flex-shrink-0 rounded-lg bg-gray-900 flex items-center justify-center overflow-hidden">
+        <div className="flex items-start gap-3 md:gap-4">
+          <div className="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0 rounded-lg bg-gray-900 flex items-center justify-center overflow-hidden">
             {!imageError ? (
               <img 
                 src={tool.logo_url} 
@@ -36,12 +36,12 @@ const ToolCard = ({ tool }) => {
                 onError={() => setImageError(true)}
               />
             ) : (
-              <Sparkles className="text-green-400" size={24} />
+              <Sparkles className="text-green-400" size={20} />
             )}
           </div>
           <div className="flex-1 min-w-0">
-            <CardTitle className="text-lg mb-2 text-white">{tool.name}</CardTitle>
-            <Badge variant="outline" className={`${categoryColor} border-current`}>
+            <CardTitle className="text-base sm:text-lg mb-2 text-white">{tool.name}</CardTitle>
+            <Badge variant="outline" className={`${categoryColor} border-current text-xs`}>
               {tool.category}
             </Badge>
           </div>
@@ -49,16 +49,16 @@ const ToolCard = ({ tool }) => {
       </CardHeader>
       
       <CardContent className="flex-1">
-        <CardDescription className="text-gray-400 line-clamp-3">
+        <CardDescription className="text-sm md:text-base text-gray-400 line-clamp-3">
           {tool.description}
         </CardDescription>
       </CardContent>
       
-      <CardFooter className="flex gap-2">
+      <CardFooter className="flex flex-col xs:flex-row gap-2">
         <Button 
           variant="default" 
           size="sm"
-          className="flex-1 bg-green-500 hover:bg-green-600"
+          className="flex-1 bg-green-500 hover:bg-green-600 text-xs sm:text-sm min-h-[44px] sm:min-h-0"
           asChild
         >
           <a href={tool.official_link} target="_blank" rel="noopener noreferrer">
@@ -69,7 +69,7 @@ const ToolCard = ({ tool }) => {
         <Button 
           variant={inToolbox ? "default" : "outline"}
           size="sm"
-          className={inToolbox ? "bg-green-500 hover:bg-green-600" : "text-green-400 border-green-400 hover:bg-green-400 hover:text-white"}
+          className={`${inToolbox ? "bg-green-500 hover:bg-green-600" : "text-green-400 border-green-400 hover:bg-green-400 hover:text-white"} text-xs sm:text-sm min-h-[44px] sm:min-h-0`}
           onClick={handleToggleToolbox}
         >
           {inToolbox ? <Check className="mr-2 h-4 w-4" /> : <Plus className="mr-2 h-4 w-4" />}

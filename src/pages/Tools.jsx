@@ -108,9 +108,9 @@ const Tools = () => {
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-8">
-        <div className="flex gap-8">
+        <div className="flex gap-6 lg:gap-8">
           {/* Sidebar - Desktop */}
-          <aside className="hidden md:block w-64 flex-shrink-0">
+          <aside className="hidden md:block w-48 lg:w-64 flex-shrink-0">
             <div className="sticky top-8">
               <CategoryFilter
                 categories={categories}
@@ -138,7 +138,7 @@ const Tools = () => {
             {filteredTools.length > 0 ? (
               <div className={
                 viewMode === 'grid' 
-                  ? 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'
+                  ? 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6'
                   : 'flex flex-col gap-4'
               }>
                 {filteredTools.map((tool, index) => (
