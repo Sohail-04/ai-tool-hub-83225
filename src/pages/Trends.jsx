@@ -91,15 +91,12 @@ const trends = [
 
 const Trends = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-black text-white">
       {/* Header */}
-      <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <header className="bg-gray-900 py-4">
         <div className="container mx-auto px-4 md:px-6 lg:px-8 flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">AI</span>
-            </div>
-            <span className="font-bold text-xl hidden sm:inline-block">AI Tools Hub</span>
+            <Link to="/" className="text-xl sm:text-2xl font-bold text-green-400">AI Tool Tester</Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -107,7 +104,7 @@ const Trends = () => {
             <ul className="flex gap-6">
               {navItems.map((item) => (
                 <li key={item.to}>
-                  <Link to={item.to} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+                  <Link to={item.to} className="text-sm font-medium text-gray-300 hover:text-green-400 transition-colors">
                     {item.title}
                   </Link>
                 </li>
@@ -121,39 +118,39 @@ const Trends = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="py-12 md:py-16 lg:py-20 px-4 md:px-6 lg:px-8">
+      <section className="py-12 md:py-16 lg:py-20 px-4 md:px-6 lg:px-8 bg-gradient-to-r from-gray-900 via-green-900 to-blue-900">
         <div className="container mx-auto text-center max-w-4xl">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <TrendingUp className="h-8 w-8 md:h-12 md:w-12 text-primary" />
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">AI Trends</h1>
+            <TrendingUp className="h-8 w-8 md:h-12 md:w-12 text-green-400" />
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white">AI Trends</h1>
           </div>
-          <p className="text-base md:text-xl text-muted-foreground">
+          <p className="text-base md:text-xl text-gray-300">
             Stay ahead with the latest trends and developments in artificial intelligence
           </p>
         </div>
       </section>
 
       {/* Trends Grid */}
-      <section className="pb-20 px-4 md:px-6 lg:px-8">
+      <section className="pb-20 px-4 md:px-6 lg:px-8 bg-gray-900">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
             {trends.map((trend) => (
-              <Card key={trend.id} className="hover:shadow-lg transition-shadow">
+              <Card key={trend.id} className="bg-gray-800 border-gray-700 hover:bg-gray-700 transition-all">
                 <CardHeader>
                   <div className="flex items-start justify-between mb-2">
-                    <Badge variant="secondary">{trend.category}</Badge>
-                    <div className="flex items-center gap-1 text-green-600">
+                    <Badge variant="secondary" className="bg-gray-700 text-gray-300">{trend.category}</Badge>
+                    <div className="flex items-center gap-1 text-green-500">
                       <ArrowUpRight className="h-4 w-4" />
                       <span className="text-sm font-semibold">{trend.growth}</span>
                     </div>
                   </div>
-                  <CardTitle className="text-base sm:text-lg">{trend.title}</CardTitle>
-                  <CardDescription className="text-sm md:text-base mt-2">
+                  <CardTitle className="text-base sm:text-lg text-white">{trend.title}</CardTitle>
+                  <CardDescription className="text-sm md:text-base mt-2 text-gray-300">
                     {trend.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="flex items-center justify-between text-sm text-muted-foreground">
+                  <div className="flex items-center justify-between text-sm text-gray-400">
                     <div className="flex items-center gap-1">
                       <Calendar className="h-4 w-4" />
                       <span>{new Date(trend.date).toLocaleDateString()}</span>
@@ -171,9 +168,9 @@ const Trends = () => {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-border py-8 px-4">
-        <div className="container mx-auto text-center text-sm text-muted-foreground">
-          <p>&copy; 2024 AI Tools Hub. All rights reserved.</p>
+      <footer className="bg-gray-900 py-8 px-4">
+        <div className="container mx-auto text-center text-sm text-gray-400">
+          <p>&copy; 2024 AI Tool Tester. All rights reserved.</p>
         </div>
       </footer>
     </div>

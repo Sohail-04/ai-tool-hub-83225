@@ -33,15 +33,12 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-black text-white">
       {/* Header */}
-      <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <header className="bg-gray-900 py-4">
         <div className="container mx-auto px-4 md:px-6 lg:px-8 flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">AI</span>
-            </div>
-            <span className="font-bold text-xl hidden sm:inline-block">AI Tools Hub</span>
+            <Link to="/" className="text-xl sm:text-2xl font-bold text-green-400">AI Tool Tester</Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -49,7 +46,7 @@ const Contact = () => {
             <ul className="flex gap-6">
               {navItems.map((item) => (
                 <li key={item.to}>
-                  <Link to={item.to} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+                  <Link to={item.to} className="text-sm font-medium text-gray-300 hover:text-green-400 transition-colors">
                     {item.title}
                   </Link>
                 </li>
@@ -63,31 +60,31 @@ const Contact = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="py-12 md:py-16 lg:py-20 px-4 md:px-6 lg:px-8">
+      <section className="py-12 md:py-16 lg:py-20 px-4 md:px-6 lg:px-8 bg-gradient-to-r from-gray-900 via-green-900 to-blue-900">
         <div className="container mx-auto text-center max-w-4xl">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6">Get In Touch</h1>
-          <p className="text-base md:text-xl text-muted-foreground">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-white">Get In Touch</h1>
+          <p className="text-base md:text-xl text-gray-300">
             Have questions about AI tools? We're here to help you find the perfect solution.
           </p>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section className="pb-20 px-4 md:px-6 lg:px-8">
+      <section className="pb-20 px-4 md:px-6 lg:px-8 bg-gray-900">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Contact Form */}
-            <Card>
+            <Card className="bg-gray-800 border-gray-700">
               <CardHeader>
-                <CardTitle className="text-xl sm:text-2xl">Send us a message</CardTitle>
-                <CardDescription>
+                <CardTitle className="text-xl sm:text-2xl text-white">Send us a message</CardTitle>
+                <CardDescription className="text-gray-400">
                   Fill out the form below and we'll get back to you within 24 hours
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="space-y-2">
-                    <Label htmlFor="name">Name</Label>
+                    <Label htmlFor="name" className="text-gray-300">Name</Label>
                     <Input
                       id="name"
                       name="name"
@@ -95,11 +92,11 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="min-h-[44px]"
+                      className="min-h-[44px] bg-gray-700 border-gray-600 text-white placeholder:text-gray-400"
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="email">Email</Label>
+                    <Label htmlFor="email" className="text-gray-300">Email</Label>
                     <Input
                       id="email"
                       name="email"
@@ -108,11 +105,11 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="min-h-[44px]"
+                      className="min-h-[44px] bg-gray-700 border-gray-600 text-white placeholder:text-gray-400"
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="subject">Subject</Label>
+                    <Label htmlFor="subject" className="text-gray-300">Subject</Label>
                     <Input
                       id="subject"
                       name="subject"
@@ -120,11 +117,11 @@ const Contact = () => {
                       value={formData.subject}
                       onChange={handleChange}
                       required
-                      className="min-h-[44px]"
+                      className="min-h-[44px] bg-gray-700 border-gray-600 text-white placeholder:text-gray-400"
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="message">Message</Label>
+                    <Label htmlFor="message" className="text-gray-300">Message</Label>
                     <Textarea
                       id="message"
                       name="message"
@@ -133,10 +130,10 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       rows={6}
-                      className="resize-none"
+                      className="resize-none bg-gray-700 border-gray-600 text-white placeholder:text-gray-400"
                     />
                   </div>
-                  <Button type="submit" className="w-full min-h-[44px]">
+                  <Button type="submit" className="w-full min-h-[44px] bg-green-500 hover:bg-green-600 text-white">
                     <Send className="mr-2 h-4 w-4" />
                     Send Message
                   </Button>
@@ -146,23 +143,23 @@ const Contact = () => {
 
             {/* Contact Information */}
             <div className="space-y-6">
-              <Card>
+              <Card className="bg-gray-800 border-gray-700">
                 <CardHeader>
-                  <CardTitle className="text-xl sm:text-2xl">Contact Information</CardTitle>
-                  <CardDescription>
+                  <CardTitle className="text-xl sm:text-2xl text-white">Contact Information</CardTitle>
+                  <CardDescription className="text-gray-400">
                     Reach out to us through any of these channels
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-start gap-3">
                     <div className="mt-1">
-                      <Phone className="h-5 w-5 text-primary" />
+                      <Phone className="h-5 w-5 text-green-400" />
                     </div>
                     <div>
-                      <p className="font-medium">Phone</p>
+                      <p className="font-medium text-white">Phone</p>
                       <a 
                         href="tel:+917767009994" 
-                        className="text-muted-foreground hover:text-primary transition-colors"
+                        className="text-gray-400 hover:text-green-400 transition-colors"
                       >
                         +91 77670 09994
                       </a>
@@ -170,13 +167,13 @@ const Contact = () => {
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="mt-1">
-                      <Mail className="h-5 w-5 text-primary" />
+                      <Mail className="h-5 w-5 text-green-400" />
                     </div>
                     <div>
-                      <p className="font-medium">Email</p>
+                      <p className="font-medium text-white">Email</p>
                       <a 
                         href="mailto:contact@aitoolshub.com" 
-                        className="text-muted-foreground hover:text-primary transition-colors"
+                        className="text-gray-400 hover:text-green-400 transition-colors"
                       >
                         contact@aitoolshub.com
                       </a>
@@ -184,11 +181,11 @@ const Contact = () => {
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="mt-1">
-                      <MapPin className="h-5 w-5 text-primary" />
+                      <MapPin className="h-5 w-5 text-green-400" />
                     </div>
                     <div>
-                      <p className="font-medium">Location</p>
-                      <p className="text-muted-foreground">
+                      <p className="font-medium text-white">Location</p>
+                      <p className="text-gray-400">
                         India
                       </p>
                     </div>
@@ -196,30 +193,30 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="bg-gray-800 border-gray-700">
                 <CardHeader>
-                  <CardTitle className="text-xl sm:text-2xl">Office Hours</CardTitle>
+                  <CardTitle className="text-xl sm:text-2xl text-white">Office Hours</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Monday - Friday</span>
-                    <span className="font-medium">9:00 AM - 6:00 PM IST</span>
+                    <span className="text-gray-400">Monday - Friday</span>
+                    <span className="font-medium text-white">9:00 AM - 6:00 PM IST</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Saturday</span>
-                    <span className="font-medium">10:00 AM - 4:00 PM IST</span>
+                    <span className="text-gray-400">Saturday</span>
+                    <span className="font-medium text-white">10:00 AM - 4:00 PM IST</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Sunday</span>
-                    <span className="font-medium">Closed</span>
+                    <span className="text-gray-400">Sunday</span>
+                    <span className="font-medium text-white">Closed</span>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="bg-primary/5 border-primary/20">
+              <Card className="bg-gray-700 border-gray-600">
                 <CardContent className="pt-6">
-                  <p className="text-center font-medium mb-2">Managed by</p>
-                  <p className="text-center text-xl font-bold">Ulhas Nashine</p>
+                  <p className="text-center font-medium mb-2 text-gray-300">Managed by</p>
+                  <p className="text-center text-xl font-bold text-white">Ulhas Nashine</p>
                 </CardContent>
               </Card>
             </div>
@@ -228,9 +225,9 @@ const Contact = () => {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-border py-8 px-4">
-        <div className="container mx-auto text-center text-sm text-muted-foreground">
-          <p>&copy; 2024 AI Tools Hub. All rights reserved.</p>
+      <footer className="bg-gray-900 py-8 px-4">
+        <div className="container mx-auto text-center text-sm text-gray-400">
+          <p>&copy; 2024 AI Tool Tester. All rights reserved.</p>
         </div>
       </footer>
     </div>
